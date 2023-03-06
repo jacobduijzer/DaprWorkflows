@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "src\Api\Api.csproj", "{426B5D07-0253-43FE-9345-22EDD55EBB70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SickReportingWorkflow", "src\SickReportingWorkflow\SickReportingWorkflow.csproj", "{F8EBB59A-0BF0-40AE-B5DA-8931DD46874F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "src\Shared\Shared.csproj", "{C9659C2A-A96C-4BE2-8199-4BA89B1C07A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{426B5D07-0253-43FE-9345-22EDD55EBB70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{426B5D07-0253-43FE-9345-22EDD55EBB70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{426B5D07-0253-43FE-9345-22EDD55EBB70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{426B5D07-0253-43FE-9345-22EDD55EBB70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8EBB59A-0BF0-40AE-B5DA-8931DD46874F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8EBB59A-0BF0-40AE-B5DA-8931DD46874F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8EBB59A-0BF0-40AE-B5DA-8931DD46874F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8EBB59A-0BF0-40AE-B5DA-8931DD46874F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9659C2A-A96C-4BE2-8199-4BA89B1C07A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9659C2A-A96C-4BE2-8199-4BA89B1C07A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9659C2A-A96C-4BE2-8199-4BA89B1C07A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9659C2A-A96C-4BE2-8199-4BA89B1C07A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

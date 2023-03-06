@@ -1,0 +1,39 @@
+name: dapr-workflows
+extensions:
+- name: dapr
+  app-ssl: false
+  app-protocol: http
+  components-path: ./dapr/components
+  config: ./dapr
+- name: zipkin
+
+services:
+- name: api 
+  project: src/Api/Api.csproj
+  bindings:
+    - name: graphql
+      routes: ["/graphql"]
+
+- name: workflow
+  project: src/SickReportingWorkflow/SickReportingWorkflow.csproj
+
+- name: dapr-demo-db
+  image:  postgres
+  env:
+  - name: POSTGRES_PASSWORD
+    value: "pass@word1"
+  bindings:
+  - port: 5432
+    connectionString: Server=${host};Port=${port};User Id=postgres;Password=${env:POSTGRES_PASSWORD};
+
+- name: rabbit
+  image: rabbitmq:3-management
+  bindings:
+    - name: ui
+      protocol: http
+      port: 15672
+      containerPort: 15672
+    - name: amqp
+      protocol: amqp
+      port: 5672
+
