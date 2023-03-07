@@ -2,7 +2,7 @@
 
 ## Design
 
-![Design](./docs/context.png")
+![Design](./docs/context.png)
 
 ## Running the Workflows
 
