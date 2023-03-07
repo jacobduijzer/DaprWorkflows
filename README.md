@@ -20,6 +20,8 @@ dotnet run
 
 Open the url and add /graphql, see mutation query below.
 
+![GraphQL](./docs/graphql.png)
+
 ## Mutation
 
 ```
