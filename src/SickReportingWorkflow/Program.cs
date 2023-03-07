@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
     builder.Services.AddDaprWorkflow(options =>
     {
         options.RegisterWorkflow<SicknessReporting>();
+        options.RegisterActivity<NotifyActivity>();
         options.RegisterActivity<PredictActivity>();
     });
 }
