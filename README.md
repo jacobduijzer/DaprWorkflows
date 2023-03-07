@@ -40,4 +40,3 @@ mutation AddNewSickReport($sr: SickReportInput!) {
   }
 }
 
-```
