@@ -8,12 +8,20 @@
 
     <ItemGroup>
       <PackageReference Include="Dapr.AspNetCore" Version="1.10.0" />
+      <PackageReference Include="Dapr.Client" Version="1.10.0" />
+      <PackageReference Include="Dapr.Workflow" Version="1.10.0" />
       <PackageReference Include="HotChocolate.AspNetCore" Version="13.0.5" />
       <PackageReference Include="HotChocolate.Diagnostics" Version="13.0.5" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Shared\Shared.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Dapr.Workflow">
+        <HintPath>..\..\..\..\..\.nuget\packages\dapr.workflow\1.10.0\lib\net7.0\Dapr.Workflow.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>

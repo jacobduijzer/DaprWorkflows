@@ -5,7 +5,6 @@ extensions:
   app-protocol: http
   components-path: ./dapr/components
   config: ./dapr
-- name: zipkin
 
 services:
 - name: api 

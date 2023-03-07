@@ -1,4 +1,5 @@
 using Api;
+using Dapr.Workflow;
 
 var builder = WebApplication.CreateBuilder(args);
 {
@@ -11,6 +12,9 @@ var builder = WebApplication.CreateBuilder(args);
         .AddMutationType(with => with.Name("Mutation"))
         .AddTypeExtension<NewSickReportMutation>()
         .AddInMemorySubscriptions();
+    builder.Services.AddDaprWorkflow(options =>
+    {
+    });
 }
 
 var app = builder.Build();
