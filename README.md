@@ -1,5 +1,9 @@
 # DaprWorkflows
 
+## Design
+
+![Design](./docs/context.png")
+
 ## Running the Workflows
 
 ```

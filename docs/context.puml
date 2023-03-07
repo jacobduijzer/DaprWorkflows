@@ -1,0 +1,10 @@
+@startuml
+!include <C4/C4_Component>
+
+Person(user, "User", "Sends a mutation to the API")
+Component(api, "API", ".NET / GraphQL", "Api to send data to the workflows")
+Component(workflows, "Workflows", "Dapr Workflows", "Test workflow")
+
+Rel(user, api, "uses")
+Rel(api, workflows, "Uses")
+@enduml
