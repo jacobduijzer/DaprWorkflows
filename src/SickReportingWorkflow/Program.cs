@@ -1,20 +1,14 @@
 using Dapr.Workflow;
-using SickReportingWorkflow;
 using SickReportingWorkflow.Activities;
 using SickReportingWorkflow.Workflows;
 
-var host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(async services =>
+var builder = WebApplication.CreateBuilder(args);
+{
+    builder.Services.AddDaprWorkflow(options =>
     {
-        services.AddDaprClient();
-        services.AddDaprWorkflow(options =>
-        {
-            options.RegisterWorkflow<SicknessReporting>();
-            options.RegisterActivity<PredictActivity>();
-
-            //     
-        });
-        // services.AddHostedService<Worker>();
-    }).Build();
-
-await host.RunAsync();
+        options.RegisterWorkflow<SicknessReporting>();
+        options.RegisterActivity<PredictActivity>();
+    });
+}
+var app = builder.Build();
+app.Run();
